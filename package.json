@@ -4,9 +4,11 @@
   "description": "generador de templates html con moustache, pensado para pdf y email",
   "main": "lib/template-manager.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js",
-    "build": "babel -d lib src",
-    "test": "mocha"
+    "init": "npm i && npm run build && npm run doc",
+    "start": "node main.js",
+    "build": "babel -d lib src --source-maps",
+    "test": "nodemon --ignore output,scripts --exec babel-node test",
+    "doc": "jsdoc ./src -d documentation -c .jsdoc -r"
   },
   "author": "",
   "license": "ISC",

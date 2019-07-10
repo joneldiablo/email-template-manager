@@ -1,6 +1,6 @@
-import fs from "fs-extra";
-import path from "path";
-import TemplateManager from "./lib/template-manager";
+const fs = require("fs-extra");
+const path = require("path");
+const TemplateManager = require("./lib/template-manager");
 
 const main = async () => {
   let data = {

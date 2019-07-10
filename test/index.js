@@ -1,16 +1,11 @@
-# template-manager
-
-## how to use
-
-```js
 import fs from "fs-extra";
 import path from "path";
-import TemplateManager from "email-template-manager";
+import TemplateManager from "../src/template-manager";
 
 const main = async () => {
   let data = {
     imageSrc: () => TemplateManager.embedSrc(path.join(__dirname, '../input/images', 'bquate.jpg')),
-    name: 'Jhon Doe.',
+    name: 'Jonathan Rdz.',
     githubHref: 'https://github.com/joneldiablo/',
     github: 'joneldiablo'
   };
@@ -32,8 +27,3 @@ const main = async () => {
 }
 
 main();
-```
-
-## version update
- - v1.1.0: added pug, mjml & handlebars instead mustache
- - v1.1.1: example to use
