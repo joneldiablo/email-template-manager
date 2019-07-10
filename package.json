@@ -1,6 +1,6 @@
 {
   "name": "email-template-manager",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "generador de templates html con moustache, pensado para pdf y email",
   "main": "lib/template-manager.js",
   "scripts": {
