@@ -7,7 +7,8 @@ const main = async () => {
     imageSrc: () => TemplateManager.embedSrc(path.join(__dirname, '../input/images', 'bquate.jpg')),
     name: 'Jonathan Rdz.',
     githubHref: 'https://github.com/joneldiablo/',
-    github: 'joneldiablo'
+    github: 'joneldiablo',
+    path
   };
   let pathTemplate = path.join(__dirname, '../input', 'businesscard.html');
   let template = new TemplateManager(pathTemplate, data);

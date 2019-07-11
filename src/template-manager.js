@@ -99,7 +99,10 @@ export default class TemplateManager {
    */
   async pug(filePath = this.filePath, data = this.data, encoding = this.encoding) {
     let template = await this.readFile(filePath, encoding);
-    return pug.render(template, data);
+    return pug.render(template, {
+      ...data,
+      filename: filePath
+    });
   }
 
   async render(filePath = this.filePath, data = this.data, encoding = this.encoding) {
